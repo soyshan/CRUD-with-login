@@ -2,7 +2,9 @@ import express from "express"
 import {db} from "./database/db.js"
 import authRoutes from './routes/authRoutes.js'
 import router from "./routes/routes.js";
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 
 const app= express(); //para que nos devuelva respuestas bien
